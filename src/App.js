@@ -17,7 +17,7 @@ function App() {
   let page = 1;
 
   function searchUsers() {
-    fetch(`https://api.github.com/search/users?q=${nameToSearch}in:login&page=${page}&client_id=${client_id}&client_secret=${client_secret}`)
+    fetch(`https://api.github.com/search/users?q=${nameToSearch}in:login&page=${page}&per_page=${10}&client_id=${client_id}&client_secret=${client_secret}`)
       .then(resp => resp.json())
       .then(json => {
         console.log(json);
