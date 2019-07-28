@@ -1,0 +1,94 @@
+.App {
+  height: 100%;
+  text-align: center;
+}
+
+/* .App * {
+  border: 1px solid;
+} */
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url("https://github.githubassets.com/images/modules/logos_page/Octocat.png") no-repeat center 333px / 50%;
+  opacity: 0.05;
+}
+
+.ui-container {
+  margin: 32px auto;
+  padding-bottom: 28px;
+  width: 90%;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+input {
+  padding: 4px;
+  width: 200px;
+  outline: none;
+  font-weight: bold;
+}
+
+button {
+  padding: 4px 8px 5px;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+ul.userSearchResultsList {
+  margin: auto;
+  margin-bottom: 32px;
+  padding: 0;
+  max-width: 800px;
+}
+
+li.userSearchResult {
+  list-style-type: none;
+  margin-bottom: 6px;
+  padding: 8px;
+  padding-top: 18px;
+  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 100ms ease-out;
+}
+
+li.userSearchResult:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+img {
+  height: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.margin-b-16 {
+  margin-bottom: 16px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flex.flex-center {
+  justify-content: center;
+}
+
+.userSearchResultsList p {
+  padding-left: 16px;
+}
