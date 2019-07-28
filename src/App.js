@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import UserSearchResults from './components/userSearchResults/UserSearchResults.js';
+
 import './App.css';
 
 import client from './gitclient';
@@ -80,24 +82,7 @@ function App() {
         </div>
       </div>
 
-      <div>
-        <ul className="userSearchResultsList">
-          {
-            userSearchResults.map((user) => (
-              <li key={user.id} className="flex userSearchResult" onClick={() => window.open(user.html_url)}>
-                <div>
-                  <img src={user.avatar_url} alt={user.id} />
-                </div>
-                <div className="text-left">
-                  <p>Username: <strong>{user.login}</strong></p>
-                  <p>Type: {user.type}</p>
-                  <p>Score: {user.score}</p>
-                </div>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
+      <UserSearchResults userSearchResults={userSearchResults} />
     </div>
   );
 }
