@@ -58,7 +58,7 @@ function App() {
               } />
             </label>
           </div>
-          <div>
+          <div style={{ paddingTop: 4 }}>
             <button className="search-btn" onClick={searchUsers}>Search</button>
           </div>
           <div>
@@ -67,6 +67,14 @@ function App() {
                 <p>total results: <strong>{numTotalResults}</strong></p> :
                 null
             }
+          </div>
+          <div>
+            <label>
+              Results per page:
+              <select>
+                <option>10</option>
+              </select>
+            </label>
           </div>
           <div>
             {
